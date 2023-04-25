@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Adil Afzaal a Portfolio</title>  <!--this is the title in the browser TAB-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/reflection.css">
+</head>
+  <body>
+    <main>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+        
+            <div id="hamitems">
+                <a class="link" href="#home">Home</a>
+                <a class="link" href="#about">About</a>
+                <a class="link" href="#projects">Projects</a>
+                <a class="link" href="#reflections">Reflections</a>
+                <a class="link" href="#contact">Contact</a>
+            </div>
+          </nav>
+<!------------------------------------------Home Section------------------------------------------->           
+        <section id="home">
+            <section>
+                <video id="video1" loop autoplay muted width="100vw">
+                    <source src="../ISYS3004/videos/Website Comp.mov">
+                </video>
+            </section>
+            <span class="text-rotate">who is</span>
+            <h1 id="heading">Adil Afzaal?</h1>
+            <a  href="#about"><h4 id="story" class="typewriter">a story by adil afzaal</h4></a>
+        </section>
+        <br>
+        <br>
+        <br>
+<!------------------------------------------About Section------------------------------------------->
+        <section id="about">
+            <section id="content">
+                <section id="about-span">
+                    <span id="click-text">  About Me! </span><span id="click-text2"> Click the Arrows</span>
+                </section>
+                <section id="about-list">
+                    <ul class="slide">
+                        <h3>Student? </h3>
+                        <p>I'm a <b><em class="colour-change">Business Information Systems Student</em></b></p>
+                        <p>I've learnt HTML | CSS | Javascript (kinda) | a bit a' Python & SQL </p>
+                        <figure class="image-container1">
+                            <video id="video2" loop autoplay muted>
+                                <source src="../ISYS3004/videos/hud-22449.mp4">
+                            </video>
+                        </figure>
+                    </ul>      
+
+                    <ul class="slide">
+                        <h3>Filmmaker?</h3>
+                        <p>Yeah I've made a few personal films, one of 
+                        which is a wildlife film. </p> 
+                        <p>Along the way I've learnt<b><em class="colour-change"> Davinci Resolve, After-Effects and Blender.</em></b></p>
+                        <figure class="image-container1">
+                            <video id="video2" loop autoplay muted>
+                                <source src="../ISYS3004/videos/Website Comp.mov">
+                            </video>
+                        </figure>
+                    </ul>
+                   
+                    <ul class="slide">
+                        <h3>Artist?</h3>
+                        <p>My skills are in digital media, pen and paper, and vector drawings.</p>
+                        <figure class="image-container1">
+                            <video id="video2" loop autoplay muted>
+                                <source src="../ISYS3004/videos/ink-67358.mp4">
+                            </video>
+                        </figure>
+                    </ul>
+                
+                    <ul class="slide">
+                        <h3>Designer?</h3> 
+                        <p>Mostly posters, graphics, logos...</p>
+                        <p>and oh yeah,<b class="colour-change"><em> UX and UI app and web prototypes in Figma</em></b></p>
+                        <figure class="image-container1"><img src="../ISYS3004/Images/pexels-alex-andrews-1203819.jpg"></figure>
+                    </ul>
+
+                    <ul class="slide">
+                        <h3>Photographer?</h3>
+                        <p>I have a keen interest in wildlife and nature photography</p>
+                        <figure class="image-container1"><img src="../ISYS3004/Images/Kilimanjaro.jpg"></figure>
+                    </ul>
+                    
+
+                    <ul class="slide">
+                        <p>I am always aiming to learn new things, to discover, grow, 
+                            and find innovative solutions for problems I may face... 
+                            <br>
+                            <br>
+                            In other words, <b class="colour-change"><em class="typewriter">I’m a Problem Solver.</em></b> 
+                        </p>
+                    </ul>
+                </section>
+            </section> 
+            <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="next" onclick="plusDivs(1)">&#10095;</button>
+        </section>
+
+<!------------------------------------------Projects Section------------------------------------------->   
+        <section id="projects">
+            <a href="https://github.com/adilaf">
+                <img id="logos1" src="https://img.icons8.com/3d-fluency/94/null/github.png" alt="github-link"/>
+            </a>
+            <h3 id="project-heading">Projects</h3>
+            
+
+        <!----------CHAT GPT helped me figure out how I would structure this onclick function for JS----------->
+                            <!----------I adjusted the code accordingly----------->    
+                            
+            <section id="button-link">
+                    <section id="select-buttons">
+                        <button class="button2" onclick="showRecent()">Recent</button>
+                        <button class="button2" onclick="showStudentWork()">Student Work</button>
+                        <button class="button2" onclick="showFilmmaking()">Filmmaking</button>
+                        <button class="button2" onclick="showPhotography()">Photography</button>
+                        <button class="button2" onclick="showAnimation()">Animation</button>
+                        <button class="button2" onclick="showDesign()">Design</button>
+                    </section>
+            </section>
+            
+            <section id="recent" class="active">
+                <a href="https://adilaf.github.io/RPS/" title="Click to Play Rock Paper Scissors">
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/rps.png">
+                </a>
+                <a href="https://adilaf.github.io/flatland/" title="Click to Explore Flatland">
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/flatland.png">
+                </a>
+                <a href="https://adilaf.github.io/Todo-App/" title="Click to create a To-Do List">
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/Todo.png">
+                </a>
+                <a href="https://adilaf.github.io/RSS-Reader/?" title="Click to open the RSS-Reader">
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/rss.png">
+                </a>
+                <a href="destination-page.html" >
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/Sky on fire-2.jpg">
+                </a>
+                <a href="destination-page.html">
+                    <span class="caption"> Webpage created with </span>
+                    <span class="caption2">  CSS | JS | HTML </span>
+                    <img src="../ISYS3004/Images/Sky on fire-2.jpg">
+                </a>
+            </section>
+            <section id="studentWork">
+                <a href="https://adilaf.github.io/RPS/"><img src="../ISYS3004/Images/rps.png" ></a>
+                <a href="https://adilaf.github.io/flatland/"><img src="../ISYS3004/Images/flatland.png"></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+            </section>
+            <section id="filmmaking">
+                <!-- Filmmaking images go here -->
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+            </section>
+            <section id="photography">
+                <!-- Photography images go here -->
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+            </section>
+            <section id="animation">
+                <!-- Animation images go here -->
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+            </section>
+            <section id="design">
+                <!-- Design images go here -->
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+                <a href="destination-page.html"><img src="../ISYS3004/Images/Sky on fire-2.jpg" ></a>
+            </section>
+        </section>
+            <br>
+            <br>
+        <section id="reflections">
+            <br>
+            <h3>Reflections</h3>
+            <p>HTML, CSS and Javascript are powerful tools that have been formed to suit our
+                modern web-development needs. With the further improvement/ enhacement of AI 
+                generating tools and other resources learing for the web has become much more 
+                convenient and fast-paced as large banks of information are readily available.
+            </p>
+            <p>In creating this website for my Website Fundamentals Assignment I hope I have showcased how
+                through the use of different tools (AI, websites, stack-overflow etc), that I have the critical 
+                thinking, and problem-solving skills to understand and find different solutions to difficult
+                tasks.
+            </p>
+        </section>
+    </main>
+
+    <!------------------------------------------Contact Section------------------------------------------->
+    <footer id="contact">
+        <section id="contact-info">
+            <span id="click-text3"> Contact Me </span><span id="click-text4"> Click the Icons</span>
+            <br>
+            <h3>Contact Me</h3>
+            <p><b><em>Click</em></b> on the mail or linkedin icon which will redirect you to the 
+                the right place to contact me... </p>
+            <a href="mailto: afzaaladil500@yahoo.com.au" subject="subject-text">
+                <img id="logos2" src="https://img.icons8.com/cute-clipart/256/null/apple-mail.png" alt="mail-link"/>
+            </a>
+            <a href="https://www.linkedin.com/in/adilafzaal/" subject="subject-text">
+                <img id="logos3" src="https://img.icons8.com/fluency/144/null/linkedin.png"/>
+            </a>
+        </section>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/script-animations.js"></script>
+    <script src="js/swiper.js"></script>
+
+  </body>
+
+
+
+</html>
+
+
+

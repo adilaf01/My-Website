@@ -232,6 +232,7 @@ img{
 /*---------------Recents---------------*/
 #recent{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -484,10 +485,7 @@ img{
         text-align: center;
     }
 
-    #projects{
-        display: flex;
-        flex-direction: row;
-    }
+    
 }
 
 

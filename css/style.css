@@ -485,6 +485,12 @@ img{
         text-align: center;
     }
 
+    #recent{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0 auto;
+    }
     
 }
 

@@ -3,12 +3,12 @@
 /* Imported from https://fonts.google.com/specimen/Signika+Negative#styles */
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Ubuntu:wght@700&display=swap');
 
+/* Imported Rubik bold font for h1 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+
 h1{
-    font-family:'Signika Negative', sans-serif;
-    display: flex;
-    position: absolute;
-    padding: 0;
-    margin: 0 auto;
+    font-family:'Rubik';
     color: #E5E5E5;
     font-size: 120px;
     text-shadow: 5px 5px 20px black;

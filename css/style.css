@@ -155,6 +155,83 @@ img{
 /*  SOME AREAS of the code in this section was AI assissted and 
     elemnets from W3Schools may have also been used   */
 
+#current{
+    width: 100vw;
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    height: 200vh;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 10 10 10 black;
+    background-color: rgb(247, 247, 247);
+    animation: fade-in 2s ease-in-out forwards;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-image: url(../Images/Sky\ on\ fire-3.jpg);
+    object-fit: cover;
+    object-position: 1% 10%;
+    opacity: 100%;
+}
+
+.description{
+    display: block;
+    margin: 0 auto;
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 10 10 10 black;
+    background-color: rgb(247, 247, 247);
+    animation: fade-in 2s ease-in-out forwards;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.description-span{
+    padding: 5px 10px;
+    text-align:center;
+    margin: 0 auto;
+    background-color: #225dff;
+    color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Signika Negative', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.description-span2{
+    padding: 5px 10px;
+    text-align:center;
+    margin: 0 auto;
+    background-color: #ffa631;
+    color: #333;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Signika Negative', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+iframe{
+    width: 40vw;
+    height: 50vh;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.iframe-container{
+    display: inline;
+    margin: 0 auto;
+}
+
 #logos1{
     display: flex;
     position: absolute;
@@ -172,6 +249,10 @@ img{
     transform: scale(100%);
  }
  
+
+.project-link{
+    display: block;
+}
 
 #projects{
     display: flex;

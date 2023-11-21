@@ -18,6 +18,10 @@ main{
 
 /*==========================NAV============================*/
 
+a{
+    text-decoration: none;
+}
+
 nav{
     margin: 0;
     position: fixed;
@@ -98,6 +102,7 @@ nav{
 
 
 #story{
+    position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -163,35 +168,51 @@ img{
     height: 200vh;
     text-align: center;
     align-content: center;
-    border-radius: 5px;
-    box-shadow: 10 10 10 black;
-    background-color: rgb(247, 247, 247);
     animation: fade-in 2s ease-in-out forwards;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-text2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0 auto;
+    height: 60vh;
+    align-content: center;
+    background-image: url(../Images/giraffe1.jpg);
+    background-size: cover; /* This will cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: 50% 50%; /* This centers the image in the element */
+    opacity: 1; /* 100% opacity */
 }
 
 .content-text{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
+    height: 60vh;
     align-content: center;
-    background-image: url(../Images/Sky\ on\ fire-3.jpg);
-    object-fit: cover;
-    object-position: 1% 10%;
-    opacity: 100%;
+    background-image: url(../Images/paper-3155438_1920.jpg);
+    background-size: cover; /* This will cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: 50% 50%; /* This centers the image in the element */
+    opacity: 1; /* 100% opacity */
 }
 
 .description{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
     margin: 0 auto;
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 45vh;
+    justify-content: center;
     text-align: center;
     align-items: center;
     align-content: center;
     border-radius: 5px;
     box-shadow: 10 10 10 black;
-    background-color: rgb(247, 247, 247);
+    background-color: rgba(247, 247, 247,0.8);
     animation: fade-in 2s ease-in-out forwards;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -200,36 +221,76 @@ img{
 .description-span{
     padding: 5px 10px;
     text-align:center;
-    margin: 0 auto;
+    margin: 2px;
     background-color: #225dff;
     color: #ffffff;
     border-radius: 5px 5px 5px 5px;
     font-family: 'Signika Negative', sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .description-span2{
     padding: 5px 10px;
     text-align:center;
-    margin: 0 auto;
-    background-color: #ffa631;
+    margin: 2px;
+    background-color: #cbcbcb;
     color: #333;
     border-radius: 5px 5px 5px 5px;
     font-family: 'Signika Negative', sans-serif;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-wrap{
+    display: block;
+    justify-content: center;
+    padding: 0;
+    text-align: center; /* Add this line to ensure text is centered */
+}
+
+.text-wrap p {
+    text-align: center;
+    margin: 0 auto; /* This centers the paragraph if it has a specified width */
+    width: 70%; /* Ensure the paragraph takes the full width */
 }
 
 iframe{
+    display: flex;
+    flex-direction: row;
     width: 40vw;
-    height: 50vh;
-    padding: 20px;
+    height: 45vh;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .iframe-container{
-    display: inline;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
+}
+
+.desc-video-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 40vw;
+    height: 50vh;
+}
+
+.desc-video-container, video{
+    border: none;
+    border-radius: 5px;
 }
 
 #logos1{
@@ -551,6 +612,70 @@ iframe{
         text-align: center;
     }
 
+    #current{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .content-text2{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 100vw;
+        height: 60vh;
+    }
+
+
+    .description-span{
+        padding: 5px 10px;
+        text-align:center;
+        margin: 2px;
+        background-color: #225dff;
+        color: #ffffff;
+        border-radius: 5px 5px 5px 5px;
+        font-family: 'Signika Negative', sans-serif;
+    }
+
+    .description-span2{
+        padding: 5px 10px;
+        text-align:center;
+        margin: 2px;
+        background-color: #cbcbcb;
+        color: #333;
+        border-radius: 5px 5px 5px 5px;
+        font-family: 'Signika Negative', sans-serif;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .tags{
+        display: flex;
+        flex-direction: row;
+    }
+
+    iframe{
+        width: 70vw;
+        height: 40vh;
+    }
+
 }
 
 /*---------------------Max-Width 900px-----------------------*/
@@ -617,6 +742,44 @@ iframe{
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+    .tags{
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .content-text2{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 20px;
+        height: 80vh;
+    }
+
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: 80vh;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 92vw;
+        height: 60vh;
+    }
+
+
 }
 
 
@@ -639,6 +802,7 @@ iframe{
         top: 20%;
         font-size: 100px;
     }
+
     #story{
         display: inline-block;
         position: absolute;

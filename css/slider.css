@@ -23,11 +23,10 @@
 }
 
 
-
 #about{
     padding: 0;
-    width: 80vw;
-    height: 65vh;
+    width: 80%;
+    height: 30rem;
     margin:0 auto;
     border-radius: 5px;
     box-shadow: 10 10 10 black;
@@ -36,52 +35,34 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#about-list{
-    display: flex;
-    align-content: center;
-    position: relative;
-}
 
 .slide{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: 100px;
 }
 
-.image-container1{
-    display: flex;
+.about-text{
+    position: absolute;
+    height: 100%;
 }
 
-.image-container1 img {
+
+.media-container{
     position: absolute;
     border-radius: 5px;
-    width: 26vw;
-    height: 45vh;
-    left: 55%;
-    top: 70px;
+    width: 40%;
+    height: 85%;
+    left: 50%;
     object-fit: cover;
     border-radius: 10px;
     animation: fade-in 1s ease-in-out forwards;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#video2{
-    position: absolute;
-    border-radius: 5px;
-    width: 26vw;
-    height: 45vh;
-    left: 55%;
-    top: 70px;
-    object-fit: cover;
-    border-radius: 10px;
-    animation: fade-in 1s ease-in-out forwards;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .slide h3, p{
-    margin-left: 100px;
-    width: 400px;
+    margin-left: 10rem;
+    width: 25rem;
 }
 
 /*---------------Buttons----------------*/
@@ -187,9 +168,6 @@ button.prev, button.next {
 
 @media screen and (max-width: 1000px){
 
-    #about{
-        width: 90vw;
-    }
 
     .slide{
         top: 10px;
@@ -197,72 +175,14 @@ button.prev, button.next {
         flex-direction: column;
     }
 
-    .slide h3, p{
-        margin-left: 50px;
-        width: 320px;
-    }
 }
 
-/*------------------max-width 950--------------------*/
-@media screen and (max-width: 950px){
-    #about{
-        width: 90vw;
-    }
-    .slide h3, p{
-        margin-left: 48px;
-        width: 280px;
-    }
-}
 
 /*---------------------max-width 750px-----------------------*/
 
 @media screen and (max-width: 800px){
-    #about{
-        width: 90vw;
-        height: 80vh;
-    }
-    
-    .slide{
-        display: flex;
-        margin-top: 5px;
-        left: 0px;
-    }
-    
-    .slide h3, p{
-        left: 50px;
-        width: 400px;
-    }
 
-    .image-container1{
-        display: flex;
-        flex-direction: column;
-    }
-    .image-container1 img {
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        justify-content: center;
-        top: 240px;
-        left: 10%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 
-    #video2{
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        top: 240px;
-        left: 10%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 
     button.prev, button.next {
         position: fixed;
@@ -285,158 +205,5 @@ button.prev, button.next {
 
 /*---------------------max-width 600px-----------------------*/
 @media screen and (max-width: 600px){
-    #about{
-        width: 90vw;
-    }
 
-    .slide{
-        margin-top: 10px;
-    }
-
-    .slide h3, p{
-        width: 330px;
-    }
-
-    .image-container1 img {
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        justify-content: center;
-        top: 240px;
-        left: 10%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #video2{
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        top:  240px;
-        left: 10%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 }
-
-/*---------------------max-width 480px-----------------------*/
-@media screen and (max-width: 480px){
-    #about{
-        width: 90vw;
-        height: 120vw;
-    }
-
-    .slide{
-        margin-top: 23px;
-    }
-
-    .slide h3, p{
-        margin: 0px;
-        width: 280px;
-    }
-    .image-container1 img {
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        justify-content: center;
-        top: 160px;
-        left: 11%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #video2{
-        position: absolute;
-        border-radius: 5px;
-        width: 70vw;
-        height: 40vh;
-        top:  160px;
-        left: 11%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-}
-
-
-/*---------------------max-width 370px-----------------------*/
-@media screen and (max-width: 370px){
-
-    #about{
-        width: 90vw;
-        height: 140vw;
-    }
-    
-    .slide{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    
-    .slide h3, p{
-        width: 270px;
-    }
-
-    .image-container1{
-        display: flex;
-        flex-direction: column;
-    }
-    .image-container1 img {
-        position: absolute;
-        border-radius: 5px;
-        width: 80vw;
-        height: 30vh;
-        justify-content: center;
-        top: 230px;
-        left: 5%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #video2{
-        position: absolute;
-        border-radius: 5px;
-        width: 80vw;
-        height: 30vh;
-        top:  230px;
-        left: 5%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    button.prev, button.next {
-        position: fixed;
-        display: inline-block;
-        background-color: #ffa631;
-        border: none;
-        border-style: dotted;
-        color: rgb(0, 0, 0);
-        padding: 15px 15px;
-        text-align: center;
-        text-decoration: none;
-    
-        font-size: 16px;
-        margin: 4px 2px;
-    
-        cursor: pointer;
-        border-radius: 5px;
-      }
-}
-
-
-
-

@@ -24,6 +24,8 @@
 
 
 #about{
+    display: flex;
+    flex-direction: column;
     padding: 0;
     width: 80%;
     height: 30rem;
@@ -38,21 +40,25 @@
 
 .slide{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .about-text{
     position: absolute;
     height: 100%;
+    margin-top: 2rem;
 }
 
 
-.media-container{
+.slider-media{
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    margin-top: 1.75rem;
     border-radius: 5px;
     width: 40%;
-    height: 85%;
-    left: 50%;
+    height: 80%;
+    left: 52%;
     object-fit: cover;
     border-radius: 10px;
     animation: fade-in 1s ease-in-out forwards;
@@ -62,7 +68,6 @@
 
 .slide h3, p{
     margin-left: 10rem;
-    width: 25rem;
 }
 
 /*---------------Buttons----------------*/
@@ -117,53 +122,6 @@ button.prev, button.next {
 /*=============Media Queries=================*/
 
 
-/*---------------------max-width 1300px-----------------------*/
-@media screen and (max-width: 1300px){
-    #about{
-        width: 90vw;
-    }
-    .slide{
-        top: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image-container1{
-        flex-direction: row;
-    }
-
-    .slide h3, p{
-        margin-left: 70px;
-        width: 350px;
-    }
-
-    .image-container1 img {
-        position: absolute;
-        border-radius: 5px;
-        width: 30vw;
-        height: 40vh;
-        top: 100px;
-        left: 55%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #video2{
-        position: absolute;
-        border-radius: 5px;
-        width: 30vw;
-        height: 40vh;
-        top:  100px;
-        left: 55%;
-        object-fit: cover;
-        border-radius: 10px;
-        animation: fade-in 1s ease-in-out forwards;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-}
-
 /*------------------max-width 1000--------------------*/
 
 @media screen and (max-width: 1000px){
@@ -171,6 +129,11 @@ button.prev, button.next {
 
     .slide{
         top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .slider-media{
         display: flex;
         flex-direction: column;
     }
@@ -205,5 +168,24 @@ button.prev, button.next {
 
 /*---------------------max-width 600px-----------------------*/
 @media screen and (max-width: 600px){
+    #about{
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+    }
+    .slide{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .slider-media{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    .slide h3, p{
+        margin: 0 auto;
+        width: 80%;
+    }
 }

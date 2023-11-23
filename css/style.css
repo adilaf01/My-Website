@@ -65,7 +65,7 @@ nav{
 #label-box {
     margin: 0 auto;
     position: absolute;
-    top: 35%;
+    top: 20rem;
     left: 50%;
     transform: translateX(-50%); /* Centering the element */
 }
@@ -97,13 +97,13 @@ nav{
     text-align: center;
     width: 100vw;
     position: absolute;
-    top: 45%;
+    top: 27rem;
 }
 
 
 #story{
     position: absolute;
-    top: 58%;
+    top: 35rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -133,8 +133,8 @@ nav{
 #video1{
     padding: 0;
     margin: 0 auto;
-    height: 100vh;
-    width: 100vw;
+    height: 56rem;
+    width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
     opacity: 100%;
@@ -143,7 +143,8 @@ nav{
 
 
 #home{
-    width: 100vw;
+    width: 100%;
+    height: 56rem;
     padding: 0;
     margin: 0;
     margin-bottom: 0;
@@ -626,13 +627,6 @@ iframe{
         border-radius: 10px;
     }
 
-    #story{
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
     #current{
         width: 100%;
     }
@@ -697,66 +691,33 @@ iframe{
 
 }
 
-/*---------------------Max-Width 900px-----------------------*/
-@media screen and (max-width: 900px){
-    
-    #story{
-        display: inline-block;
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    #story{
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    #recent{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    
-}
 
 
-@media screen and (max-width: 700px){
-    #story{
-        display: inline-block;
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-}
+
 /*---------------------Max-Width 600px-----------------------*/
 @media screen and (max-width: 600px){
     #video1{
-        height: 70vh;
+        height: 40rem;
     }
-    .text-rotate{
-        display: flex;
-        flex-wrap: wrap;
-        position: absolute;
-        top: 10%;
-        border-radius: 10px;
+
+    #home{
+        height: 40rem;
+    }
+
+    #label-box{
+        top: 6rem;
     }
     
     #heading{ 
         display: inline-block;
         position: absolute;
-        top: 20%;
+        top: 12rem;
         font-size: 100px;
     }
     #story{
         display: inline-block;
         position: absolute;
-        top: 50%;
+        top: 25rem;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -797,37 +758,6 @@ iframe{
         height: 24rem;
     }
 
-
 }
 
 
-/*---------------------Max-Width 400px-----------------------*/
-@media screen and (max-width: 400px){
-    #video1{
-        height: 70vh;
-    }
-    .text-rotate{
-        display: flex;
-        flex-wrap: wrap;
-        position: absolute;
-        top: 10%;
-        border-radius: 10px;
-    }
-    
-    #heading{ 
-        display: inline-block;
-        position: absolute;
-        top: 20%;
-        font-size: 100px;
-    }
-
-    #story{
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-}
-/*===============================END====================================*/

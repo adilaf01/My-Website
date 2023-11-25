@@ -54,6 +54,9 @@
 
 
 .slider-media {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
     margin-left: 0.5rem; /* Adjust space between text and media */
     max-width: 100%;
     border-radius: 5px;
@@ -62,6 +65,8 @@
 
 
 .about-text{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     height: 100%;
     width: 45%;

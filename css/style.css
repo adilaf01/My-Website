@@ -204,7 +204,7 @@ img{
     flex-direction: column;
     margin-top: 100px;
     margin: 0 auto;
-    width: 40%;
+    width: 36%;
     height: 26rem;
     justify-content: center;
     text-align: center;
@@ -267,7 +267,7 @@ img{
 iframe{
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 36%;
     height: 26rem;
     border: none;
     border-radius: 5px;

@@ -723,14 +723,14 @@ iframe{
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
-        height: 52rem;
+        height: 54rem;
         justify-content: center;
     }
 
     .content-text{
         display: flex;
         flex-direction: column;
-        height: 52rem;
+        height: 54rem;
         justify-content: center;
     }
 
@@ -744,7 +744,7 @@ iframe{
 
     iframe{
         width: 90%;
-        height: 24rem;
+        height: 18rem;
     }
 
 }
